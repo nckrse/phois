@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 import requests
 import argparse
+import urllib3
 import re
 import os
+
+urllib3.disable_warnings()
 
 iana_base = 'https://www.iana.org/domains/root/db/'
 
